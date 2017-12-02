@@ -1,10 +1,8 @@
 program helloWorldMPI
   use mpi
   implicit none
-  ! include mpif.h
-    integer i, j
     integer rank, noProcs, ierr
-    real*16 sumaBuff, subSuma, suma, wTime
+    real*16 wTime
 
 ! Inicializa MPI
   call MPI_Init(ierr)
@@ -48,5 +46,3 @@ end if
   call MPI_Finalize(ierr)
   stop
 end program helloWorldMPI
-
-! ******************** Subrutinas ******************** !
